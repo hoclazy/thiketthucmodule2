@@ -41,7 +41,7 @@ public class PhoneBook {
     public void deleteUser(String numberPhone) {
         int index = findIndexByNumberPhone(numberPhone);
         if (index == -1) {
-            System.out.println("Khong tim thay so dien thoai nay");
+            System.out.println("Khong tim duoc danh ba voi so dien thoai tren");
         }
         else {
             users.remove(index);
@@ -62,7 +62,7 @@ public class PhoneBook {
     public void updateUser(String numberPhone, User newUser) {
         int index = findIndexByNumberPhone(numberPhone);
         if (index == -1) {
-            System.out.println("Khong tim thay so dien thoai nay.");
+            System.out.println("Khong tim duoc danh ba voi so dien thoai tren.");
         }
         else {
             users.set(index, newUser);
